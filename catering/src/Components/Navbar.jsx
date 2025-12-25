@@ -8,9 +8,9 @@ export default function Navbar() {
         <h1>Catering</h1>
       </div>
       <div className="nav-links">
-        <Link to="/contact" className="navlink">Home</Link>
-        <Link to="/contact" className="navlink">Services</Link>
-        <Link to="/contact" className="navlink">About Us</Link>
+        <Link to="/" className="navlink">Home</Link>
+        <Link to="/services" className="navlink">Services</Link>
+        <Link to="/about" className="navlink">About Us</Link>
         <Link to="/contact" className="navlink">Contact</Link>
       </div>
     </nav>

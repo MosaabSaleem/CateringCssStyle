@@ -4,12 +4,15 @@ import './index.css';
 // import App from './App';
 import Catering from './Catering.jsx';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Catering />
+    <BrowserRouter>
+      {/* <App /> */}
+      <Catering />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
