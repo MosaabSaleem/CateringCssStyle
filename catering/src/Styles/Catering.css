@@ -1,4 +1,123 @@
 .body{
     background-color: #FFFAF5;
-    height: 200vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400vh;
+    background-color: #FFFAF5;
+}
+
+.hero-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-title {
+    color: white;
+    font-size: 5rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.hero-title-accent {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.hero-title-accent::after {
+    content: "";
+    position: absolute;
+    
+    top: 7vh;
+    left: 15px;
+    
+    width: 100%;
+    height: 50%;
+    
+    background-color: #51591B;
+    z-index: -1;
+}
+
+.hero-title-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.image-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 15px; */
+}
+
+.hero-certifications-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    padding-top: 10vh;
+}
+
+.hero-certifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 50%;
+    height: 100%;
+    background-color: #51591B;
+}
+
+.hero-certifications img {
+    height: 95%;
+    width: auto;
+}
+
+.menu-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #51591B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.menu-top-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-title {
+    color: #F3C83A;
+    font-size: 3rem;
+    /* margin-bottom: 30px; */
+}
+
+.menu-description {
+    color: white;
+    /* font-size: 1.5rem; */
+    width: 60%;
+    text-align: center;
+    margin-bottom: 5px;
 }
