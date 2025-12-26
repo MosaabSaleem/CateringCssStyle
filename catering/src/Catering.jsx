@@ -1,5 +1,7 @@
 import "./Styles/Catering.css";
 import Navbar from "./Components/Navbar.jsx";
+import MenuItem from "./Components/menuItem.jsx";
+
 import heroImage from "./assets/heroFoodImage.jpg";
 import halalLogo from "./assets/halalLogo.png";
 import aifsLogo from "./assets/AIFSLogo.png";
@@ -33,17 +35,24 @@ export default function Catering() {
         </div>
         <div className="menu-bottom-section">
           <div className="menu-items">
-
+            <MenuItem />
+            <MenuItem />
+            <MenuItem />
           </div>
         </div>
       </div>
 
       <div className="reviews-gallery-section">
+        <div className="reviews-section">
 
+        </div>
+        <div className="gallery-section">
+          
+        </div>
       </div>
 
       <div className="contact-section">
-        
+
       </div>
     </div>
   );
