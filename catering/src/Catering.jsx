@@ -29,15 +29,17 @@ export default function Catering() {
       </div>
 
       <div className="menu-section">
-        <div className="menu-top-section">
-          <h2 className="menu-title">Our Menu</h2>
-          <p className="menu-description">At C-ATE-ERING, we pride ourselves in quality and authenticity. Every dish is made with love and care, same as our grandmas overseas! Choose from one of our packages and enjoy flavours from back home </p>
-        </div>
-        <div className="menu-bottom-section">
-          <div className="menu-items">
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
+        <div className="menu-container">
+          <div className="menu-top-section">
+            <h2 className="menu-title">Our Menu</h2>
+            <p className="menu-description">At C-ATE-ERING, we pride ourselves in quality and authenticity. Every dish is made with love and care, same as our grandmas overseas! Choose from one of our packages and enjoy flavours from back home </p>
+          </div>
+          <div className="menu-bottom-section">
+            <div className="menu-items">
+              <MenuItem image={heroImage} title="Signature" description={"$39 Per Person\n20 - 50 Guests\n2 Appetizers, 3 Mains, 3 Desserts"} />
+              <MenuItem image={heroImage} title="Gourmet" description={"$49 Per Person\n30 - 80 Guests\n3 Appetizers, 4 Mains, 3 Desserts"} />
+              <MenuItem image={heroImage} title="Premium" description={"$69 Per Person\n50 -100+ Guests\n4 Appetizers, 5 Mains, 5 Desserts"} />
+            </div>
           </div>
         </div>
       </div>
