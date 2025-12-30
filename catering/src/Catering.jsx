@@ -1,6 +1,7 @@
 import "./Styles/Catering.css";
 import Navbar from "./Components/Navbar.jsx";
 import MenuItem from "./Components/menuItem.jsx";
+import Reviews from "./Components/reviews.jsx";
 
 import heroImage from "./assets/heroFoodImage.jpg";
 import halalLogo from "./assets/halalLogo.png";
@@ -32,7 +33,7 @@ export default function Catering() {
         <div className="menu-container">
           <div className="menu-top-section">
             <h2 className="menu-title">Our Menu</h2>
-            <p className="menu-description">At C-ATE-ERING, we pride ourselves in quality and authenticity. Every dish is made with love and care, same as our grandmas overseas! Choose from one of our packages and enjoy flavours from back home </p>
+            <p className="menu-description">At C-ATE-ERING, we pride ourselves in quality and authenticity. Every dish is made with love and care, same as our grandmas overseas! Choose from one of our packages and enjoy flavours from back home.</p>
           </div>
           <div className="menu-bottom-section">
             <div className="menu-items">
@@ -46,10 +47,11 @@ export default function Catering() {
 
       <div className="reviews-gallery-section">
         <div className="reviews-section">
-
+          <h2 className="reviews-title">What Our Clients Say</h2>
+          <Reviews />
         </div>
         <div className="gallery-section">
-          
+          <h2 className="reviews-title">Gallery</h2>
         </div>
       </div>
 
