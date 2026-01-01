@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    height: 45vh;
     /* margin: 40px auto; */
     /* padding: 0 60px; */
 }
@@ -17,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 45vh;
 }
 
 .embla__arrow {
@@ -49,16 +51,24 @@
 /* The Card itself */
 .review-card {
   background: white;
-  /* padding: 50px; */
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 4px 4px rgba(0,0,0,0.1);
-  height: 29vh;
-  width: 90%;
+  height: 40vh;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.review-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .review-text {

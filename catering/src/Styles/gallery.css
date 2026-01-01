@@ -72,3 +72,10 @@
   font-weight: bold;
   color: #51591B;
 }
+
+.gallery-image {
+  width: 60%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 15px;
+}

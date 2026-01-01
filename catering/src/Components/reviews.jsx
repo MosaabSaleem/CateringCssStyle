@@ -3,14 +3,18 @@ import useEmblaCarousel from 'embla-carousel-react'
 // import Autoplay from 'embla-carousel-autoplay'
 import "../Styles/reviews.css";
 
+import avatar1 from "../assets/panda.png";
+import avatar2 from "../assets/cat.png";
+import avatar3 from "../assets/bear.png";
+
 export default function Reviews() {
   // const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
   const reviews = [
-    { id: 1, text: "C-ATE-ERING made our wedding unforgettable! The food was authentic and delicious.", author: "Sarah L." },
-    { id: 2, text: "The team was professional and attentive. The Middle Eastern dishes were a hit!", author: "Michael T." },
-    { id: 3, text: "From start to finish, they exceeded our expectations. The flavors reminded me of home.", author: "Aisha K." },
+    { id: 1, avatar: avatar1, text: "C-ATE-ERING made our wedding unforgettable! The food was authentic and delicious.", author: "Sarah L." },
+    { id: 2, avatar: avatar2, text: "The team was professional and attentive. The Middle Eastern dishes were a hit!", author: "Michael T." },
+    { id: 3, avatar: avatar3, text: "From start to finish, they exceeded our expectations. The flavors reminded me of home.", author: "Aisha K." },
   ];
 
   const scrollPrev = useCallback(() => {
@@ -31,6 +35,7 @@ export default function Reviews() {
           {reviews.map((review) => (
             <div className="embla__slide" key={review.id}>
               <div className="review-card">
+                  <img src={review.avatar} alt={`${review.author} avatar`} className="review-avatar" />
                   <p className="review-text">"{review.text}"</p>
                   <p className="review-author">- {review.author}</p>
               </div>

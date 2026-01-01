@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-}
+} 
 
 .body{
     background-color: #FFFAF5;
@@ -173,7 +173,7 @@ a:hover {
 
 .reviews-gallery-section {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: #FFFAF5;
     display: flex;
     flex-direction: column;
@@ -185,7 +185,7 @@ a:hover {
 
 .reviews-section {
     width: 85%;
-    height: 40vh;
+    height: 60vh;
     border-bottom: 2px solid #51591B;
     border-top: 2px solid #51591B;
 }
@@ -199,7 +199,7 @@ a:hover {
 
 .gallery-section {
     width: 85%;
-    height: 40vh;
+    height: 60vh;
     border-bottom: 2px solid #51591B;
     border-top: 2px solid #51591B;
 }

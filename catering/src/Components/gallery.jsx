@@ -1,16 +1,20 @@
 import React, {useCallback} from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import "../Styles/reviews.css";
+import "../Styles/gallery.css";
 
-export default function Reviews() {
+import gallery1 from "../assets/gallery1.jpg";
+import gallery2 from "../assets/gallery2.jpg";
+import gallery3 from "../assets/gallery3.jpg";
+
+export default function Gallery() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
   // const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
   const reviews = [
-    { id: 1, text: "C-ATE-ERING made our wedding unforgettable! The food was authentic and delicious.", author: "Sarah L." },
-    { id: 2, text: "The team was professional and attentive. The Middle Eastern dishes were a hit!", author: "Michael T." },
-    { id: 3, text: "From start to finish, they exceeded our expectations. The flavors reminded me of home.", author: "Aisha K." },
+    { id: 1, image: gallery1, alternate: "Table Design" },
+    { id: 2, image: gallery2, alternate: "Excellent Service" },
+    { id: 3, image: gallery3, alternate: "Happy Customers" },
   ];
 
   const scrollPrev = useCallback(() => {
@@ -30,10 +34,7 @@ export default function Reviews() {
         <div className="embla__container">
           {reviews.map((review) => (
             <div className="embla__slide" key={review.id}>
-              <div className="review-card">
-                  <p className="review-text">"{review.text}"</p>
-                  <p className="review-author">- {review.author}</p>
-              </div>
+                <img src={review.image} alt={review.alternate} className="gallery-image" />
             </div>
           ))}
         </div>
