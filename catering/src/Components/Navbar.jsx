@@ -8,10 +8,10 @@ export default function Navbar() {
         <h1>C(ate)ring</h1>
       </div>
       <div className="nav-links">
-        <Link to="/" className="navlink">Home</Link>
-        <Link to="/services" className="navlink">Services</Link>
-        <Link to="/about" className="navlink">About Us</Link>
-        <Link to="/contact" className="navlink">Contact</Link>
+        <a href="#Home" className="navlink">Home</a>
+        <a href="#Menu" className="navlink">Menu</a>
+        <a href="#About" className="navlink">About Us</a>
+        <a href="#Contact" className="navlink">Contact</a>
       </div>
     </nav>
   )

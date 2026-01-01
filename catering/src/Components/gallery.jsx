@@ -1,11 +1,11 @@
 import React, {useCallback} from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
-// import Autoplay from 'embla-carousel-autoplay'
+import Autoplay from 'embla-carousel-autoplay'
 import "../Styles/reviews.css";
 
 export default function Reviews() {
-  // const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
+  // const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
   const reviews = [
     { id: 1, text: "C-ATE-ERING made our wedding unforgettable! The food was authentic and delicious.", author: "Sarah L." },

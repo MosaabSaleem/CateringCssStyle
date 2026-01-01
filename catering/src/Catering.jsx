@@ -2,6 +2,7 @@ import "./Styles/Catering.css";
 import Navbar from "./Components/Navbar.jsx";
 import MenuItem from "./Components/menuItem.jsx";
 import Reviews from "./Components/reviews.jsx";
+import Gallery from "./Components/gallery.jsx";
 
 import heroImage from "./assets/heroFoodImage.jpg";
 import halalLogo from "./assets/halalLogo.png";
@@ -10,7 +11,7 @@ import aifsLogo from "./assets/AIFSLogo.png";
 export default function Catering() {
   return (
     <div className="home-container">
-      <div className="hero-container">
+      <div id="Home" className="hero-container">
       <Navbar />
       
         <div className="image-container">
@@ -29,7 +30,7 @@ export default function Catering() {
         </div>
       </div>
 
-      <div className="menu-section">
+      <div id="Menu" className="menu-section">
         <div className="menu-container">
           <div className="menu-top-section">
             <h2 className="menu-title">Our Menu</h2>
@@ -45,17 +46,22 @@ export default function Catering() {
         </div>
       </div>
 
-      <div className="reviews-gallery-section">
+      <div id="Reviews" className="reviews-gallery-section">
         <div className="reviews-section">
           <h2 className="reviews-title">What Our Clients Say</h2>
           <Reviews />
         </div>
         <div className="gallery-section">
           <h2 className="reviews-title">Gallery</h2>
+          <Gallery />
         </div>
       </div>
 
-      <div className="contact-section">
+      <div id="About" className="about-section">
+
+      </div>
+
+      <div id="Contact" className="contact-section">
 
       </div>
     </div>
